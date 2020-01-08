@@ -10,7 +10,7 @@ public class mainex2 {
 		System.out.println("-------------------");
 		Aviao a1 = new Aviao();
 		a1.status();
-		
+		System.out.println("oiiii");
 	}
 
 }
