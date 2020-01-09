@@ -20,5 +20,23 @@ public class Aviao extends Veiculo {
 	public void setUso(String uso) {
 		this.uso = uso;
 	}
+	//construtor
+	public Aviao(String mo, int ve, String pa, float com,String ti, String uso) {
+		super(mo, ve, pa, com);
+		this.tipo = ti;
+		this.uso = uso;
+		// TODO Auto-generated constructor stub
+	}
+	// metodos
+	@Override
+	public void status() {
+		super.status();
+		System.out.println("Tipo: "+this.tipo+
+				"\nUso: "+this.uso);
+		
+		// TODO Auto-generated method stub
+		
+	}
+	
 	
 }

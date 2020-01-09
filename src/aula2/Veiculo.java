@@ -35,9 +35,6 @@ public abstract class Veiculo {
 	}
 	
 	//construtor 
-	public Veiculo() {
-		
-	}
 	
 	public Veiculo(String mo, int ve, String pa, float com) {
 		this.modelo = mo;
@@ -47,7 +44,7 @@ public abstract class Veiculo {
 		
 	}
 	
-	public void status() {
+	public  void status() {
 		System.out.println("O veiculo modelo:"+this.modelo +
 				"\nVelocidade: "+this.velocidade +
 				"\nPassageiros: "+this.passageiro +
