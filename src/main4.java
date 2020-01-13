@@ -36,12 +36,12 @@ public class main4 {
 		ps4Usado.calculaImposto();
 		ps4.calculaImposto();
 		
-		System.out.println("-------------------------------------------------------------------");
+		System.out.println("ps4 teste return  "+ ps4.calculaImposto());
+		
 		americanas.listaLivros();
-		System.out.println("-------------------------------------------------------------------");
 		americanas.listaVideoGames();
-		System.out.println("-------------------------------------------------------------------");
-		americanas.calculaPatrimonio(30);
+		americanas.calculaPatrimonio();
+		
 	}
 
 }

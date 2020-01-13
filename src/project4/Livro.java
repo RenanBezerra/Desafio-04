@@ -46,13 +46,14 @@ public class Livro extends Produto implements Imposto {
 	
 	 private double valorImp;
 	@Override
-	public void calculaImposto() {
+	public  double calculaImposto() {
 		if(this.tema == "educativo") {
-			System.out.println("Livro educativo não tem imposto: "
-					+ "" + this.getNome());
+			System.out.println("Livro educativo não tem imposto: " + this.getNome());
+			return 0.00;
 		}else {
 			valorImp = this.preco * 0.1;
-			System.out.println("Imposto: "+ this.getNome() +"é de R$"+ valorImp );
+			System.out.println("Imposto: "+ this.getNome() +"é de R$ "+ valorImp );
+		 return valorImp;
 		}
 			
 	}

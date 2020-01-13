@@ -60,7 +60,7 @@ public class Loja  {
 
 	
 	public void listaLivros() {
-		    
+			System.out.println("-------------------------------------------------------------------");
 			if(getLivros().size() == 0) {
 				
 				System.out.println("lista vazia");
@@ -76,6 +76,7 @@ public class Loja  {
 		}
 	
 	public void listaVideoGames() {
+		System.out.println("-------------------------------------------------------------------");
 		if(getVideoGame().size() == 0) {
 			
 			System.out.println("lista vazia");
@@ -92,11 +93,11 @@ public class Loja  {
 
 	
 	public int patriL,patriV,res;
-	public void calculaPatrimonio(double calc) {
-		
+	public void calculaPatrimonio() {
+		System.out.println("-------------------------------------------------------------------");
 	//livros	
 		if(getLivros().size() == 0) {
-			return;
+			
 		}else {
 			for (Livro indice : livros) {
 				patriL += indice.getPreco()*indice.getQtd();
@@ -107,13 +108,14 @@ public class Loja  {
 		
 	//video game	
 		if(getVideoGame().size() == 0) {
-			return;
+			
+			
 		}else {
 			for (VideoGame game : videoGame) {
 				patriV += game.getPreco()*game.getQtd();
 			}
 		}
-		System.out.println("video game "+ patriV);
+		System.out.println("video game patrimonio "+ patriV);
 		res = patriV + patriL;
 	System.out.println("O patrimonio da lojas americanas é de "+ res);
 		
